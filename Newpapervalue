@@ -1,0 +1,49 @@
+public class CalculatingStudentBudget
+{
+    private static Scanner keyboard = new Scanner(System.in);
+    private static double income()
+    {
+        double daysoftheweek, newspaperName, expense1,expense2,expense3,expense4,expense5,totalBudget;
+ 
+        System.out.println("INCOME section");
+ 
+        System.out.println("Please enter your days of the week , if any.");
+        daysoftheweek= keyboard.nextDouble();
+
+	System.out.println("Please enter the newspaper name , if any.");
+        newspaperName= keyboard.nextDouble();
+
+	System.out.println("Please enter your expenses , if any.");
+        expense1=keyboard.nextDouble();
+	expense2=keyboard.nextDouble();
+	expense3=keyboard.nextDouble();
+	expense4=keyboard.nextDouble();
+ 	expense5=keyboard.nextDouble();
+ 
+        System.out.println("Please enter the newspaper nam");
+        newspaperName= keyboard.nextDouble();
+ 
+        //totalling up the budget
+        totalBudget = expense1+expense2+expense3+expense4+expense5;
+ 
+        return totalBudget;
+    }//income
+ 
+    public static void main(String[] args)
+    {
+        double totalBudget=0, totalEachWeek;
+ 
+        System.out.println("Please enter the budget of weeks ");
+      
+        totalBudget = keyboard.nextDouble();
+ 
+        //calling income method
+        totalBudget = income();
+ 
+        System.out.println("Your income for the year is");
+        totalEachWeek = totalBudget /weeksInBudget;
+ 
+        System.out.println("You have the value of total each week ");
+ 
+    }//main
+}//class
